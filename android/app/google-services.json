@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "88821321974",
+    "project_id": "trackdog-490b5",
+    "storage_bucket": "trackdog-490b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88821321974:android:5ea53083f1bd57bac4dcd7",
+        "android_client_info": {
+          "package_name": "com.KHEasyDev.track_dog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADzR4iuNBecy_9jHYXvRQE1NR8p2g33D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88821321974:android:0b14718d9b255cdac4dcd7",
+        "android_client_info": {
+          "package_name": "om.KHEasyDev.track_dog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADzR4iuNBecy_9jHYXvRQE1NR8p2g33D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

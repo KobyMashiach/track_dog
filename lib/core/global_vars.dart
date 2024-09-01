@@ -1,0 +1,2 @@
+String globalAppName = "";
+String globalAppVersion = "";
