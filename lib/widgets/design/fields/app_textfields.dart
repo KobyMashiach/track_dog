@@ -57,7 +57,7 @@ class _AppTextFieldState extends State<AppTextField> {
     return SizedBox(
       height: 80,
       child: Padding(
-        padding: widget.padding ?? const EdgeInsets.all(12.0),
+        padding: widget.padding ?? const EdgeInsets.symmetric(vertical: 12),
         child: TextField(
           textAlign: widget.hintTextCenter == true
               ? TextAlign.center

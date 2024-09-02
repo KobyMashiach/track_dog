@@ -4,6 +4,7 @@ import 'package:track_dog/core/colors.dart';
 import 'package:track_dog/i18n/strings.g.dart';
 import 'package:flutter/material.dart';
 import 'package:kh_easy_dev/services/navigate_page.dart';
+import 'package:track_dog/widgets/design/buttons/app_button.dart';
 
 class AppButtonsBottomNavigationBar extends StatelessWidget {
   final bool oneButton;
@@ -43,10 +44,9 @@ class AppButtonsBottomNavigationBar extends StatelessWidget {
           children: [
             if (!oneButton) ...[
               Expanded(
-                child: KheasydevAppButton(
+                child: AppButton(
                   text: inactiveButtonText ?? t.cancel,
                   unfillColors: true,
-                  primaryColor: AppColors.primaryColor,
                   onTap: inactiveButtonOnTap ??
                       () => KheasydevNavigatePage().pop(context),
                 ),
@@ -54,9 +54,8 @@ class AppButtonsBottomNavigationBar extends StatelessWidget {
               const SizedBox(width: 40),
             ],
             Expanded(
-                child: kheasydevAppButton(
+                child: AppButton(
               text: activeButtonText ?? t.ok,
-              primaryColor: AppColors.primaryColor,
               onTap: activeButtonOnTap ??
                   () => KheasydevNavigatePage().pop(context),
             )),

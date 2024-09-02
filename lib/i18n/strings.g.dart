@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 1
-/// Strings: 49
+/// Strings: 73
 ///
-/// Built on 2024-09-01 at 18:27 UTC
+/// Built on 2024-09-02 at 06:38 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -196,6 +196,30 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get email_not_valid => 'כתובת המייל לא חוקית';
 	String get email_exist_description => 'כתובת המייל קיימת במערכת שלנו, עבור למסך ההתחברות ונסה שנית';
 	String get email_not_valid_description => 'כנראה שטעית בכתובת המייל, נא נסה שנית';
+	String get wrong_password => 'האימייל או הסיסמה שגויים, נסה שוב';
+	String get user_not_found => 'לא נמצאה כתובת המייל הזו, נסה שוב';
+	String get user_disabled => 'משתמש מושבת';
+	String get too_many_requests => 'יותר מדי בקשות להתחבר לחשבון זה';
+	String get operation_not_allowed => 'שגיאת שרת, אנא נסה שוב מאוחר יותר';
+	String get default_error => 'ההתחברות נכשלה. בבקשה נסה שוב';
+	String get invalid_credential => 'כתובת המייל או הסיסמה לא נכונים, נא נסה שנית';
+	String get want_login_exist_user => 'להתחברות למשתמש קיים​';
+	String get want_register => 'ברצוני להירשם';
+	String get want_report_lost_dog => 'ברצוני לדווח על כלב אבוד כאורח​';
+	String get forgot_password => 'שכחת סיסמה';
+	String get password_recovery => 'שחזור סיסמה';
+	String get send_mail => 'שלח מייל';
+	String get mail__recover_sent_title => 'מייל לשחזור סיסמה נשלח בהצלחה';
+	String get mail__recover_sent_description => 'נא לחץ על הקישור במייל.\nאם אינך רואה את המייל נסה לחפש בתיקיית הספאם או נסה שנית';
+	String get report_lost_dog => 'דיווח על כלב אבוד';
+	String get thanks_report_details => 'תודה שבחרת לעזור באיתור הכלבים האבודים באזורנו!\nכדי לדווח על כלב שנמצא, אנא מלא את הפרטים הבאים:​';
+	String get upload_dog_image => 'העלה תמונה של הכלב';
+	String get add_notes => 'הוספת הערות';
+	String get aggressive_dog_warning => 'חשוב לדעת: אם ראית כלב עם התנהגות תוקפנית או חשד לכלב בר, אנו ממליצים שלא לגשת אליו ולהימנע מסיכון. האפליקציה מתמקדת באיתור כלבים ביתיים, ודיווחים על כלבים פראיים יש לדווח למוקד השירות הווטרינרי האזורי.​';
+	String get explanation_friendly_dog => 'לקבלת הסבר כיצד לזהות כלב ידידותי​';
+	String get send_report => 'שלח דיווח';
+	String get contact_phone => 'מספר טלפון ליצירת קשר';
+	String get full_name => 'שם מלא';
 }
 
 /// Flat map(s) containing all translations.
@@ -253,6 +277,30 @@ extension on Translations {
 			case 'email_not_valid': return 'כתובת המייל לא חוקית';
 			case 'email_exist_description': return 'כתובת המייל קיימת במערכת שלנו, עבור למסך ההתחברות ונסה שנית';
 			case 'email_not_valid_description': return 'כנראה שטעית בכתובת המייל, נא נסה שנית';
+			case 'wrong_password': return 'האימייל או הסיסמה שגויים, נסה שוב';
+			case 'user_not_found': return 'לא נמצאה כתובת המייל הזו, נסה שוב';
+			case 'user_disabled': return 'משתמש מושבת';
+			case 'too_many_requests': return 'יותר מדי בקשות להתחבר לחשבון זה';
+			case 'operation_not_allowed': return 'שגיאת שרת, אנא נסה שוב מאוחר יותר';
+			case 'default_error': return 'ההתחברות נכשלה. בבקשה נסה שוב';
+			case 'invalid_credential': return 'כתובת המייל או הסיסמה לא נכונים, נא נסה שנית';
+			case 'want_login_exist_user': return 'להתחברות למשתמש קיים​';
+			case 'want_register': return 'ברצוני להירשם';
+			case 'want_report_lost_dog': return 'ברצוני לדווח על כלב אבוד כאורח​';
+			case 'forgot_password': return 'שכחת סיסמה';
+			case 'password_recovery': return 'שחזור סיסמה';
+			case 'send_mail': return 'שלח מייל';
+			case 'mail__recover_sent_title': return 'מייל לשחזור סיסמה נשלח בהצלחה';
+			case 'mail__recover_sent_description': return 'נא לחץ על הקישור במייל.\nאם אינך רואה את המייל נסה לחפש בתיקיית הספאם או נסה שנית';
+			case 'report_lost_dog': return 'דיווח על כלב אבוד';
+			case 'thanks_report_details': return 'תודה שבחרת לעזור באיתור הכלבים האבודים באזורנו!\nכדי לדווח על כלב שנמצא, אנא מלא את הפרטים הבאים:​';
+			case 'upload_dog_image': return 'העלה תמונה של הכלב';
+			case 'add_notes': return 'הוספת הערות';
+			case 'aggressive_dog_warning': return 'חשוב לדעת: אם ראית כלב עם התנהגות תוקפנית או חשד לכלב בר, אנו ממליצים שלא לגשת אליו ולהימנע מסיכון. האפליקציה מתמקדת באיתור כלבים ביתיים, ודיווחים על כלבים פראיים יש לדווח למוקד השירות הווטרינרי האזורי.​';
+			case 'explanation_friendly_dog': return 'לקבלת הסבר כיצד לזהות כלב ידידותי​';
+			case 'send_report': return 'שלח דיווח';
+			case 'contact_phone': return 'מספר טלפון ליצירת קשר';
+			case 'full_name': return 'שם מלא';
 			default: return null;
 		}
 	}

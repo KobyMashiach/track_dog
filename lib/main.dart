@@ -5,8 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:track_dog/firebase_options.dart';
 import 'package:track_dog/i18n/strings.g.dart';
-import 'package:track_dog/screens/login_register/login/login_screen.dart';
-import 'package:track_dog/screens/login_register/register/register_screen.dart';
+import 'package:track_dog/screens/welcome/welcome_screen.dart';
 import 'package:track_dog/services/package_info.dart';
 
 void main() async {
@@ -47,7 +46,7 @@ class MyApp extends StatelessWidget {
       locale: TranslationProvider.of(context).flutterLocale,
       supportedLocales: AppLocaleUtils.supportedLocales,
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
-      home: RegisterScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
