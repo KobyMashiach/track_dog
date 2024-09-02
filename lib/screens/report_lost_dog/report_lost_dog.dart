@@ -1,8 +1,10 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:kh_easy_dev/services/navigate_page.dart';
 import 'package:track_dog/dev/maps.dart';
 import 'package:track_dog/i18n/strings.g.dart';
+import 'package:track_dog/widgets/design/buttons/app_button.dart';
 import 'package:track_dog/widgets/design/fields/app_textfields.dart';
 import 'package:track_dog/widgets/general/appbar.dart';
 
@@ -25,17 +27,18 @@ class ReportLostDog extends StatelessWidget {
                   Expanded(child: AppTextField(hintText: t.contact_phone)),
                 ],
               ),
-              // AppButton(
-              //     text: "text",
-              //     onTap: () {
-              //       KheasydevNavigatePage().push(context, MapSample());
-              //     })
-              AddressPickerWidget(
-                onAddressSelected: (address, location) {
-                  log("Selected Address: $address");
-                  log("Selected Location: ${location.latitude}, ${location.longitude}");
-                },
-              ),
+              AppButton(
+                  text: "text",
+                  onTap: () {
+                    KheasydevNavigatePage()
+                        .push(context, AddressPickerWidget());
+                  })
+              // AddressPickerWidget(
+              //   onAddressSelected: (address, location) {
+              //     log("Selected Address: $address");
+              //     log("Selected Location: ${location.latitude}, ${location.longitude}");
+              //   },
+              // ),
             ],
           ),
         ),
